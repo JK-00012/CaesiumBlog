@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaesiumBlog</title>
+
+
+    <style>
+        body {
+            margin: 0%;
+        }
+        nav {
+            height: 5em;
+        }
+        #nav_ul {
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            height: 5em;
+
+            margin-top: 0%;
+
+            background-color: rgb(43, 113, 226);
+        }
+        .nav_li {
+            margin-right: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            color: white;
+            list-style: none;
+        
+        }
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: rgb(43, 113, 226);
+            
+        }
+        a:hover {
+            color: rgb(1, 51, 132);
+        }
+        
+        .nav_a {
+            text-decoration: none;
+            color: rgb(209, 231, 244);
+            text-transform: uppercase;
+        }
+        .nav_a:hover {
+            color: white;
+        }
+        #Copyrigth {
+            color: rgb(209, 231, 244);
+            justify-self: center;
+            align-self: center;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+        }
+
+        aside {
+            width: 20%;
+            height: 1101em;
+            background-color: rgb(217, 231, 242);
+            box-shadow:0px 0px 5px -1px black inset ;
+        }
+        footer {
+            width: 100%;
+            height: 10em;
+            background-color: rgb(43, 113, 226);
+            border-top: 4px dashed black;
+
+            padding: 10px;
+        }
+        main {
+            width: 80%;
+            margin-bottom: 3em;
+        }
+        .Flex_Boxes {
+            display: flex;
+        }
+
+
+
+/* Reeaprendiendo */
+
+        article {
+            width: 85%;
+            justify-self: center;
+        }
+        .header_text {
+            justify-self: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+        }
+        #Table_r1 {
+            justify-self: center;
+
+        }
+        th, td {
+            border: 1px solid #ccc;
+
+        }
+        .block_index {
+            justify-self: center;
+            text-align: center;
+            width: 100%;
+
+
+        }
+        #index {
+            text-align: center;
+            color: black;
+            position: fixed;
+            margin-left: 2.5em;
+
+        }
+
+
+/* Reeaprendiendo */
+
+/* images */
+.space_img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* con esto se centra en el documento */
+    justify-content: center;  
+
+
+
+    
+}
+img {
+    width: 60%;
+    /* con esto se centra las imagenes con texto */
+    display: block;
+    margin: auto
+    
+
+    
+}
+figcaption {
+    text-align: center;
+
+}
+
+/*  */
+
+body {
+    background: white;
+    color: black;
+}
+
+body.oscuro {
+    background: #111;
+    color: white;
+}
+
+
+/*  */
+
+#sidebar {
+  transition: transform 0.3s ease;
+}
+
+/* Oculto en móvil */
+@media (max-width: 768px) {
+  #sidebar {
+    transform: translateX(-20%);
+  }
+
+  #sidebar.active {
+    transform: translateX(0);
+    width: 1000em;
+  }
+
+  #toggleBtn {
+    display: block;
+  }
+
+  main {
+    width: 90%;
+  }
+  .space_img {
+    display: block;
+}
+.block_index p {
+    display: none;
+}
+
+
+}
+
+/* En desktop */
+@media (min-width: 769px) {
+  #toggleBtn {
+    display: none;
+  }
+}
+
+
+/* images */
+    </style>
+</head>
+<body>
+    <nav>
+        <ul id="nav_ul">
+            <li class="nav_li"><a class="nav_a" href="../index.html">Inicio</a></li>
+            <li class="nav_li"><a class="nav_a" href="">Acerca de</a></li>
+        <div id="dark"><button onclick="toggleModo()">Modo oscuro</button></div>
+        </ul>
+
+    </nav>
+    <div class="Flex_Boxes">
+    <aside id="sidebar">
+        <div id="index">
+            <div class="block_index">
+<br>
+            <button id="toggleBtn">☰</button>
+<br>
+            <button onclick="cambiarTodas()">Cambiar todas</button>
+
+                <p><a href="#Cianobacterias">Cianobacterias</a></p>
+            </div>
+            <div class="block_index">
+                <p><a href="#Chlorophyta">Chlorophyta</a></p>
+            </div>
+            <div class="block_index">
+                <p><a href="#Rhodophyta">Rhodophyta</a></p>
+            </div>
+            <div class="block_index">
+                <p><a href="#Ochrophyta">Ochrophyta</a></p>
+            </div>
+            <div class="block_index">
+                <p><a href="#Miozoa">Miozoa</a></p>
+            </div>
+            <div class="block_index">
+                <p><a href="Plantas no vasculares (Algas).html">Teoria</a></p>
+            </div>
+        </div>
+
+    </aside>
+
+    <main>
+        <article>
+            <section>
+                <header class="header_text">
+                <h1>Algas</h1>
+                </header>
+<h2 style="justify-self: center;" id="Cianobacterias">Cianobacterias (Algas verde azules)</h2>
+
+
+<h3>Estructuras</h3>
+<!-- Conjunto de Imagnes -->
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/cian/0/0.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Pared celular rígida formada principalmente por peptidoglicano, que proporciona soporte y protección.</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/cian/0/10.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Estructura especializada: acinetos y heterocistes para resistencia y fijación de nitrógeno</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/cian/0/8.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Hormogonios: fragmentos móviles para reproducción asexual</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/cian/0/9.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Necridios: células muertas que facilitan la fragmentación del filamento.</figcaption></p>
+</figure>
+</div>
+<h3>Tipos de talo</h3>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/cian/0/1.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/cian/0/2.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Colonias esféricas de Gloeocapsa con envoltura gelatinosa</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/cian/0/3.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Merismopedia: disposición en láminas celulares regulares</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/cian/0/4.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Anabaena: filamentos con heterocistes intercalados</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/cian/0/5.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Rivularia: tricomas con células basales diferenciadas</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/cian/0/6.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Stigonema: filamentos ramificados multiseriados</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/cian/0/7.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Scytonema: tricomas falsamente ramificados con heterocistes</figcaption></p>
+</figure>
+</div>
+<!-- Conjunto de Imagnes -->
+
+<h2 style="justify-self: center;" id="Chlorophyta">Chlorophyta (Microscopicas)</h2>
+
+<!-- Conjunto de Imagnes -->
+<h3>Estructuras</h3>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/chloro_micro/0/5.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Chlamydomonas: célula unicelular flagelada con pirenoide</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/chloro_micro/0/15.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/chloro_micro/0/13.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/chloro_micro/0/14.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<h3>Formas del cloroplasto</h3>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/chloro_micro/0/1.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>filamentos con cloroplasto acintado periférico</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/chloro_micro/0/2.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption> cloroplastos estrellados en células filamentosas</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/chloro_micro/0/3.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/chloro_micro/0/4.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<h3>Tipos de talo</h3>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/chloro_micro/0/5.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/chloro_micro/0/6.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/chloro_micro/0/11.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/chloro_micro/0/12.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/chloro_micro/0/7.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/chloro_micro/0/8.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<!-- Conjunto de Imagenes -->
+
+            <h2 style="justify-self: center;" id="Macroscopicas">Chlorophyta (Macroscopicas)</h2>
+
+<!-- Conjunto de Imagenes -->
+<h3>Estructuras</h3>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/chloro_macro/0/1.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/chloro_macro/0/2.1.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/chloro_macro/0/2.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/chloro_macro/0/3.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/chloro_macro/0/5.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/chloro_macro/0/8.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/chloro_macro/0/9.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/chloro_macro/0/11.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/chloro_macro/0/12.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<h3>Tipos de talo</h3>
+
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/chloro_micro/0/9.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/chloro_micro/0/10.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/chloro_macro/0/3.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/chloro_macro/0/4.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/chloro_macro/0/6.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/chloro_macro/0/7.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/chloro_macro/0/10.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/chloro_macro/0/13.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+
+<!-- Conjunto de Imagnes -->
+
+            <h2 style="justify-self: center;" id="Desmidiáceos">Chlorophyta (Desmidiáceos)</h2>
+
+            <!-- Conjunto de Imagnes -->
+<h3>Estructuras</h3>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/chloro_micro/0/16.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/chloro_micro/0/17.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<h3>Tipos de talo</h3>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/chloro_micro/0/18.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/chloro_micro/0/19.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+
+<!-- Conjunto de Imagnes -->
+
+
+            <h2 style="justify-self: center;" id="Rhodophyta">Rhodophyta (Algas Rojas)</h2>
+
+<!-- Conjunto de Imagnes -->
+<h3>Estructuras</h3>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/19.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/23.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/6.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/7.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/8.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/9.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<!-- - -->
+ <div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/12.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/13.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/14.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/15.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/16.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/17.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/18.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<!--  -->
+<h3>Crecimiento</h3>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/21.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/22.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<h3>Tipos de talo</h3>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/1.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/2.jpg" alt="Cubierta celular" title="Cubierta celular"class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/3.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/4.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<!-- Conjunto de Imagnes -->
+ <div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/10.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Rhodo/0/11.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<!--  -->
+           <h2 style="justify-self: center;" id="Ochrophyta">Ochrophyta (BACILLARIOPHYCEAE)</h2>
+<!-- Conjunto de Imagnes -->
+<h3>Estructuras</h3>
+<!-- Conjunto de Imagnes -->
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Ochro/0/1.1.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Ochro/0/1.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Ochro/0/2.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Ochro/0/3.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Ochro/0/5.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Ochro/0/6.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<h3>Vista A través de un microscopio</h3>
+<!-- Conjunto de Imagnes -->
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Ochro/0/3.1.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Ochro/0/3.2.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<h3>Tipos de talo</h3>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Ochro/0/7.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Ochro/0/7.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Ochro/0/7.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Ochro/0/7.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<!-- Conjunto de Imagnes -->
+
+           <h2 style="justify-self: center;" id="Ochrophyt">Ochrophyta (PHAEOPHYCEAE)</h2>
+<!-- Conjunto de Imagnes -->
+<h3>Estructuras</h3>
+<!-- Conjunto de Imagnes -->
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Ochro/0/16.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Ochro/0/12.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Ochro/0/19.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Ochro/0/18.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Ochro/0/20.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Ochro/0/23.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Ochro/0/22.jpg" alt="Cubierta celular" title="Cubierta celular"class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Ochro/0/21.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<h3>Crecimiento</h3>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Ochro/0/11.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Ochro/0/13.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Ochro/0/14.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Ochro/0/12.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Ochro/0/15.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<h3>Tipos de talo</h3>
+
+<!-- Conjunto de Imagnes -->
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Ochro/0/8.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Ochro/0/9.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Ochro/0/10.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Ochro/0/16.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Ochro/0/19.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Ochro/0/23.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<!-- Conjunto de Imagnes -->
+
+
+            <h2 style="justify-self: center;" id="Miozoa">Miozoa (DINOFLAGELADOS)</h2>
+
+<h3>Estructuras</h3>
+
+            <!-- Conjunto de Imagnes -->
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Mio/0/1.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Mio/0/2.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<h3>Tipos de talo</h3>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Mio/0/3.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Mio/0/4.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Mio/0/5.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Mio/0/6.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<!-- Conjunto de Imagnes -->
+            <h2 style="justify-self: center;" id="Miozoa">Miozoa (EUGLENOZOA)</h2>
+
+<h3>Estructuras</h3>
+
+            <!-- Conjunto de Imagnes -->
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Mio/0/7.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Euglena: célula flagelada con estigma y vacuolo contráctil</figcaption></p>
+</figure>
+
+</div>
+<h3>Tipos de talo</h3>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Mio/0/8.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Mio/0/9.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+<div class="space_img">
+<figure>
+    <img src="Almanac_Algas/Mio/0/10.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+<figure>
+    <img src="Almanac_Algas/Mio/0/11.jpg" alt="Cubierta celular" title="Cubierta celular" class="change">
+    <br>
+    <p><figcaption>Cubierta celular compuesta por peptidoglicano</figcaption></p>
+</figure>
+</div>
+            </section>
+
+    </main>
+    </div>
+
+
+
+
+
+
+<script>
+let carpetaActual = "0";
+
+function cambiarTodas() {
+    let imagenes = document.querySelectorAll(".change");
+
+    carpetaActual = (carpetaActual === "0") ? "1" : "0";
+
+    imagenes.forEach(img => {
+        let ruta = img.getAttribute("src");
+
+        // reemplaza /0/ por /1/ o viceversa
+        if (ruta.includes("/0/")) {
+            ruta = ruta.replace("/0/", "/" + carpetaActual + "/");
+        } else {
+            ruta = ruta.replace("/1/", "/" + carpetaActual + "/");
+        }
+
+        img.src = ruta + "?v=" + Date.now();
+    });
+}
+</script>
+
+<script>
+// aplicar modo guardado al cargar
+
+window.onload = function () {
+    let modoGuardado = localStorage.getItem("modo");
+    let btn = document.querySelector("button");
+
+    if (modoGuardado === "oscuro") {
+        document.body.classList.add("oscuro");
+        btn.textContent = "Modo claro";
+    }
+};
+
+function toggleModo() {
+    document.body.classList.toggle("oscuro");
+
+    let btn = event.target;
+
+    if (document.body.classList.contains("oscuro")) {
+        localStorage.setItem("modo", "oscuro");
+        btn.textContent = "Modo claro";
+    } else {
+        localStorage.setItem("modo", "claro");
+        btn.textContent = "Modo oscuro";
+    }
+}
+</script>
+<script>
+const btn = document.getElementById("toggleBtn");
+const sidebar = document.getElementById("sidebar");
+
+btn.addEventListener("click", () => {
+  sidebar.classList.toggle("active");
+});
+</script>
+
+
+    <footer>
+        <P id="Copyrigth">Copyrigth</P>
+
+    </footer>
+    
+</body>
+</html>
