@@ -74,7 +74,6 @@
             border-top: 4px dashed black;
 
             padding: 10px;
-            z-index: 1
         }
         main {
             width: 80%;
@@ -146,7 +145,6 @@ aside {
   aside {
     transform: translateX(-150%);
     position: fixed;
-    z-index: 1000;
     width: 40%;
 
 }
