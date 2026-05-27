@@ -145,5 +145,21 @@ main {
     width: 80%;
     justify-self: center;
 }
+/* bottom sidebard */
+
+  #toggleBtn {
+   /* margin-left: 100%; */
+   position: fixed;
+   margin-left: 85%;
+  }
 
 }
+/* En desktop */
+@media (min-width: 769px) {
+  #toggleBtn {
+    display: none;
+  }
+}
+
+
+
