@@ -74,6 +74,7 @@
             border-top: 4px dashed black;
 
             padding: 10px;
+            z-index: 1
         }
         main {
             width: 80%;
@@ -134,16 +135,29 @@ h1 {
     font-weight: bolder;
 }
 
+/* animaciones */
+aside {
+    transition: transform 0.3s ease
+}
 
 /* Media */
 
-@media (max-width: 769px) {
+@media (max-width: 960px) {
   aside {
-    display: none;
+    transform: translateX(-150%);
+    position: fixed;
+    z-index: 1000;
+    width: 40%;
+
 }
+aside.active {
+    transform: translateX(0);
+}
+
 main {
     width: 80%;
     justify-self: center;
+}
 }
 /* bottom sidebard */
 
@@ -153,9 +167,8 @@ main {
    margin-left: 85%;
   }
 
-}
 /* En desktop */
-@media (min-width: 769px) {
+@media (min-width: 960px) {
   #toggleBtn {
     display: none;
   }

@@ -34,3 +34,15 @@ async function cargarArticulo() {
 }
 
 cargarArticulo();
+
+
+
+
+
+
+const btn = document.getElementById("toggleBtn");
+const sidebar = document.querySelector("aside");
+
+btn.addEventListener("click", () => {
+  sidebar.classList.toggle("active");
+});
