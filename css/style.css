@@ -66,6 +66,9 @@
             height: 550em;
             background-color: rgb(253, 240, 255);
             box-shadow:0px 0px 5px -1px black inset ;
+
+            /* palabras */
+            text-align: center;
         }
         footer {
             width: 100%;
