@@ -140,7 +140,9 @@ h1 {
 /* animaciones */
 aside {
     transition: transform 0.3s ease
+
 }
+
 
 /* Media */
 
@@ -178,6 +180,11 @@ footer {
   #toggleBtn {
     display: none;
   }
+  #sidebar {
+    position: fixed;
+    justify-self: center;
+
+    }
 }
 
 
