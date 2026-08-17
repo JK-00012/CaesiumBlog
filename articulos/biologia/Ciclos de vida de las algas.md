@@ -172,3 +172,10 @@ Imagen explicativa
 - El cigoto (2n) sufre mitosis y ser transforma en un filamento cenocítico con sus utrículos
 - El filamento (2n) por mitosis dan origen al gametófito (2n)
 - El ciclo es diplóntico
+
+
+
+### Rhodophyta
+#### Reproducción asexual
+- Por fragmentación
+- Por formación de esporas directas no flageladas (aplanosporas)  llamadas monosporas

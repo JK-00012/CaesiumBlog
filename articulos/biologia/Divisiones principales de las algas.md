@@ -68,7 +68,7 @@
 | Tipo de talo   | Unicelulares o filamentosos                                                                                                           |
 | Estructura     | Formada por dos mitades idénticas llamadas hemicélulas o semicélulas, una región central llamada istmo y una abertura denominada seno |
 | Cloroplastos   | 1 o 2 en cada hemicélula                                                                                                              |
-h
+
 ## Importancia
 - Son productores primarios
 - Forman afloramientos algales
@@ -128,6 +128,19 @@ Discoidales o estrellados
 Los talos pueden ser:
 - Uniseriados: aquellos formados por una célula o por una hilera de células (talos simples)
 - Multiseriados: presentan células o filamentos agrupados y compactos, de vista superficial se observan varias hileras de células (talo complejo)
+
+Imagen del diagrama
+
+
+
+Tipos de talo. A. Uniseriado. B. Multiseriado.
+
+
+De acuerdo a como los filamentos se agregan lateralmente (vista longitudinal) pueden ser:
+- Uniaxial: si las ramas derivan de un solo filamento central (eje)
+- Multiaxiales: si los filamentos se originan independientes desde la base, son un grupo de filamentos agrupados en un talo y a veces es pseudoparenquimatoso
+
+Imagenes
 
 
 ---
