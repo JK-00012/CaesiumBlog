@@ -78,8 +78,6 @@
 - En tratamientos de aguas residuales para remoción de fosfatos y nitritos
 
 
----
-
 ## Rhodophyta (Algas Rojas)
 
 | Característica                            | Descripción                                                                                                             |
@@ -143,7 +141,6 @@ De acuerdo a como los filamentos se agregan lateralmente (vista longitudinal) pu
 Imagenes
 
 
----
 
 ## Ochrophyta (Algas Pardas)
 
@@ -177,7 +174,6 @@ Imagenes
 | Tipos de talo | Complejos y filamentosos heterótricos |
 | Células flageladas | Dos flagelos heterocontos y laterales |
 
----
 
 ## Miozoa
 
