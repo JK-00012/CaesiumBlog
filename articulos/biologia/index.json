@@ -10,5 +10,13 @@
     {
         "titulo": "Algas",
         "archivo": "Divisiones principales de las algas"
+    },
+    {
+        "titulo": "Del individuo a la biosfera: ecosistemas, biomas y regiones biogeográficas",
+        "archivo": "ecosistemas-biomas-regiones-biogeograficas"
+    },
+    {
+        "titulo": "Transcripción del ADN: cómo la célula copia la información genética en ARN",
+        "archivo": "transcripcion-del-adn"
     }
 ]
